@@ -206,6 +206,7 @@ side-nav-settings-account a:hover{
     position: absolute;
     border-radius: 17px;
     outline: none;
+    border:none;
     border-style: none;
     width: 90px;
     padding: 8px 15px;
