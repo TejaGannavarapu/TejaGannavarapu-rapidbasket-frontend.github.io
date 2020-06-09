@@ -222,13 +222,14 @@ nav{
 @media only screen and (max-width:1200px){
     .hero-box{
         height: 100vh;
-        background-size: auto 100vh;
+        background-size: 1200px 100vh;
     }
     .hero-heading{
         font-size: 2.4rem;
-        margin-top: 10%;
+        margin-top: 10%
     }
     .hero-text-1{
+        margin-top: 17px;
         font-size: 2.8rem;
     }
     .search{
@@ -254,11 +255,14 @@ nav{
     .dashed-price{
         font-size: 1rem;
     }
+    .cart-btn{
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width:992px){
     .hero-box{
         height: 100vh;
-        background-size: auto 100vh;
+        background-size: 992px 100vh;
     }
     .hero-heading{
         font-size: 2.2rem;
@@ -266,6 +270,7 @@ nav{
     }
     .hero-text-1{
         font-size: 2.5rem;
+        margin-top: 15px;
     }
     .search{
         width: 330px;
@@ -283,6 +288,7 @@ nav{
     }
     .container-price{
         width: 100%;
+        height: auto;
     }
     .price{
         font-size: 1.2rem;
@@ -292,21 +298,23 @@ nav{
     }
     .cart-btn{
         position:relative;
-        width: 120px;
-        font-size: 14px;
-        right: 10px;
+        width: auto;
+        font-size: 12px;
+        right: 5px;
     }
+    
 }
 @media only screen and (max-width:767px){
     .hero-box{
         height: 100vh;
+        background-size: 767px 100vh;
     }
     .hero-heading{
         font-size: 2em;
         margin-top: 20%;
     }
     .hero-text-1{
-        margin: 10px;
+        margin-top: 10px;
         font-size: 2.2rem;
     }
     #apos{
@@ -348,21 +356,225 @@ nav{
 @media only screen and (max-width:574px){
     .hero-box{
         height: 100vh;
-        background-size: cover;
+        background-size: 574px 100vh;
     }
     .hero-heading{
         font-size: 1.8rem;
         margin-top: 25%;
     }
     .hero-text-1{
-        margin: 10px;
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    .hero-text-2{
+        margin-bottom: 20px;
+    }
+    #apos{
+        font-size: 2.8rem;
+    }
+    .search{
+        width: 280px;
+        padding-left: 14px;
+    }
+    .hero-text-2{
+        font-size: 1.1rem;
+    }
+    .name{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1rem;
+        padding-bottom: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .row{
+        margin-left: 10%;
+    }
+    .polaroid{
+        width: 90%;
+    }
+    .container-price{
+        width:100%;
+    }
+    .offer{
+        margin-bottom: 15px;
+    }
+    .price{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .dashed-price{
+        font-size: 0.9rem;
+        margin-bottom: 20px
+    }
+    .cart-btn{
+        width: 125px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:480px){
+    .hero-box{
+        height: 100vh;
+        background-size:480px 100vh;
+    }
+    .hero-heading{
+        font-size: 1.8rem;
+        margin-top: 30%;
+    }
+    .hero-text-1{
+        margin-top: 10px;
         font-size: 2rem;
     }
     #apos{
         font-size: 2.8rem;
     }
     .search{
-        width: 318px;
+        width: 250px;
+        height: 35px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    .search-btn{
+        width: 73px;
+        font-size: 15px;
+        height: 38px;
+    }
+    .hero-text-2{
+        font-size: 1.1rem;
+    }
+    .name{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1rem;
+        padding-bottom: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .row{
+        margin-left: 10%;
+    }
+    .polaroid{
+        width: 90%;
+    }
+    .container-price{
+        width:100%;
+    }
+    .offer{
+        margin-bottom: 15px;
+    }
+    .price{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .dashed-price{
+        font-size: 0.9rem;
+        margin-bottom: 20px
+    }
+    .cart-btn{
+        width: 125px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:398px){
+    .hero-box{
+        height: 100vh;
+        background-size:398px 100vh;
+    }
+    .hero-heading{
+        font-size: 1.8rem;
+        margin-top: 35%;
+    }
+    .hero-text-1{
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    #apos{
+        font-size: 2.8rem;
+    }
+    .search{
+        width: 200px;
+        padding-left: 8px;
+        font-size: 12px;
+        height: 33px;
+    }
+    .search-btn{
+        width: 73px;
+        font-size: 15px;
+        height: 36px;
+         padding: 3px 5px;
+    }
+    .hero-text-2{
+        font-size: 1.1rem;
+    }
+    .name{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1rem;
+        padding-bottom: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .row{
+        margin-left: 10%;
+    }
+    .polaroid{
+        width: 90%;
+    }
+    .container-price{
+        width:100%;
+    }
+    .offer{
+        margin-bottom: 15px;
+    }
+    .price{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .dashed-price{
+        font-size: 0.9rem;
+        margin-bottom: 20px
+    }
+    .cart-btn{
+        width: 125px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:345px){
+    .hero-box{
+        height: 100vh;
+        background-size:345px 100vh;
+    }
+    .hero-heading{
+        font-size: 1.8rem;
+        margin-top: 43%;
+    }
+    .hero-text-1{
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    #apos{
+        font-size: 2.8rem;
+    }
+    .search{
+        width: 180px;
+        padding-left: 12px;
+        height: 28px;
+        font-size: 10px;
+    }
+    .search-btn{
+        width: 68px;
+        font-size: 12px;
+        height: 31px;
+        padding: 3px 5px;
     }
     .hero-text-2{
         font-size: 1.1rem;
