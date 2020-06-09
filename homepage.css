@@ -193,6 +193,7 @@ side-nav-settings-account a:hover{
     border-radius: 10px;
     border:none;
     border-style: none;
+    outline: none;
     display: inline;
     background-image:url(search-icon-png-9972.png);
     background-position: -7px; 
