@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*******HEADPART SECTION********/
+nav{
+    display: block;
+}
+.hero-box{
+    padding: 55px;
+    height: auto;
+    width: 100%;
+    background-image: url(images-rapidabasket/Whatback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hero-text{
+    color: #000;
+}
+.btns{
+    width: 100%;
+    text-align: center;
+}
+.submit-btn,.cancel-btn{
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+.pass-recovery:hover,
+.pass-recovery:active{
+    text-decoration: none;
+}
+
+input[type="text"]{
+    background-image: url(images-rapidabasket/user2.png);
+    background-repeat: no-repeat;
+    background-size: 3% auto ;
+    background-position: 8px ;
+    padding-left: 39px;
+}
+input[type="email"]{
+    background-image: url(images-rapidabasket/envelope.png);
+    background-repeat: no-repeat;
+    background-size: 2.8% auto ;
+    background-position: 8px ;
+    padding-left: 39px;
+}
+input[type="password"]{
+    background-image: url(images-rapidabasket/keyboard.png);
+    background-repeat: no-repeat;
+    background-size: 3% auto ;
+    background-position: 8px ;
+    padding-left: 39px;
+}
+
+@media only screen and (max-width:1200px){
+    .hero-text{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width:992px){
+    .hero-text{
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (max-width:767px){
+    .hero-text{
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (max-width:576px){
+    .hero-text{
+        font-size: 1.6rem;
+    }
+}
+
