@@ -97,7 +97,6 @@ nav{
 }
 
 
-
 /****media queries*****/
 
 @media only screen and (max-width:1200px){
@@ -125,10 +124,6 @@ nav{
     }
     .btns{
         width: 100%;
-    }
-    .order-btn{
-        float: right;
-        position: absolute;
     }
     .cancel-btn{
         margin: 0px 20px;
@@ -164,10 +159,6 @@ nav{
     .btns{
         width: 100%;
     }
-    .order-btn{
-        float: right;
-        position: absolute;
-    }
     .cancel-btn{
         margin: 0px 20px;
     }
@@ -199,12 +190,9 @@ nav{
     .btns{
         width: 100%;
     }
-    .order-btn{
-        float: right;
-        position: absolute;
-    }
     .cancel-btn{
         margin: 0px 15px;
+        font-size: 14px;
     }
 }
 
@@ -218,10 +206,12 @@ nav{
     }
     .hero-text{
         font-size: 1.8rem;
+        position: relative;
+        bottom: 20px;
     }
     .hero-box{
         width: 100%;
-        height: auto;
+        height: 100px;
     }
     .jumbotron{
         width: 100%;
@@ -246,14 +236,145 @@ nav{
     .btns{
         width: 100%;
     }
-    .order-btn{
-        float: right;
-        position: absolute;
+    .cancel-btn{
+        margin: 0px 10px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .details{
+        width: 65%;   
+    }
+    .item-img{
+        width: 30%;
+        height: auto;
+    }
+    .hero-text{
+        font-size: 1.8rem;
+        position:relative;
+        bottom: 20px;
+    }
+    .hero-box{
+        width: 100%;
+        height: 70px;
+    }
+    .jumbotron{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        top: 30px;
+        margin-bottom: 10px;
+    }
+    .name{
+        font-size: 1rem;
+        margin-bottom: 0px;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .cost{
+        font-size: 1rem;
+        margin-bottom:0px;
+    }
+    .btns{
+        width: 100%;
     }
     .cancel-btn{
         margin: 0px 10px;
+        font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .details{
+        width: 65%;   
+    }
+    .item-img{
+        width: 30%;
+        height: auto;
+    }
+    .hero-text{
+        font-size: 1.8rem;
+    }
+    .hero-box{
+        padding: 40px;
+    }
+    .jumbotron{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        top: 30px;
+        margin-bottom: 10px;
+    }
+    .name{
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .cost{
+        font-size: 0.7rem;
+        margin-bottom:0px;
+    }
+    .btns{
+        width: 100%;
+    }
+    .cancel-btn{
+        margin: 0px 10px;
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 345px) {
+    .details{
+        width: 65%;   
+    }
+    .item-img{
+        width: 30%;
+        height: auto;
+    }
+    .hero-text{
+        font-size: 1.8rem;
+    }
+    .hero-box{
+        padding: 40px;
+    }
+    .jumbotron{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        top: 30px;
+        margin-bottom: 10px;
+    }
+    .name{
+        font-size: 0.7rem;
+        margin-bottom: 0px;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .cost{
+        font-size: 0.6rem;
+        margin-bottom:0px;
+    }
+    .btns{
+        width: 100%;
+    }
+    .cancel-btn{
+        margin: 0px 10px;
+        font-size: 8px;
+        padding: 5px;
+        position: relative;
+        bottom: 1px;
+    }
+}
+
 
 
 
