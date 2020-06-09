@@ -191,6 +191,7 @@ side-nav-settings-account a:hover{
     width:380px;
     height: 40px;
     border-radius: 10px;
+    border:none;
     border-style: none;
     display: inline;
     background-image:url(search-icon-png-9972.png);
@@ -220,6 +221,8 @@ side-nav-settings-account a:hover{
 .search-btn:hover,
 .search-btn:active{
     background-color: #ff8000;
+     border-style: none;
+    border:none;
     transition: 0.2s;
 }
 
