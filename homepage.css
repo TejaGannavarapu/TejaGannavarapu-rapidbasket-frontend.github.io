@@ -222,8 +222,6 @@ side-nav-settings-account a:hover{
 .search-btn:hover,
 .search-btn:active{
     background-color: #ff8000;
-     border-style: none;
-    border:none;
     transition: 0.2s;
 }
 
