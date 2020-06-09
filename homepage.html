@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="homepage.css" type="text/css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   
+</head>
+    <body>
+        <div class="main">
+            <section class="head-part">
+        <header>
+            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <div class="side-nav">
+                    <a href="javascript:void(0)" class=" nav-link closebtn" onclick="closeNav()">&times;</a>
+                    <img class="img-fluid img-responsive prof-img" src="images-rapidabasket/Avatar.jpg">
+                    <div class="container prof-text text-center">
+                        <h2 class="prof-name">Gannavarapu Venkata Surya Sai Teja</h2>
+                    </div>
+                    <a class="nav-link profile-link" href="#" onclick="openProf()">Profile</a>
+                    <a class="nav-link order-link" href="order.html">My Orders</a>
+                    <a class="nav-link setting-link" href="#" onclick="openSettings()">Settings</a>
+                    <a class="nav-link about-link" href="#">About Us</a>
+                </div>
+                <div class="side-nav-prof">
+                    <a href="javascript:void(0)" class=" nav-link closebtn" onclick="closeProf()">&times;</a>
+                    <div class="container text-center profile">
+                        <img class="img-fluid img-responsive prof-img" src="images-rapidabasket/Avatar.jpg">
+                        <form class="profile-form container" action="/action_page.php">
+                            <div class="form-group container">
+                                <label  class="form-name text-left" for="name">Name:</label>
+                                <input type="text" class="form-control" 
+                                value="G V S SAI TEJA" id="profile-form-name" name="name">
+                            </div>
+                            <div class="form-group container">
+                                <label  class="form-about text-left" for="about">About:</label>
+                                <input type="text" class="form-control" placeholder="Add your info.." id="profile-form-about" name="about">
+                            </div>
+                            <div class="form-group container">
+                                <label  class="form-address text-left" for="name">Address:</label>
+                                <textarea rows="3" class="form-control" id="profile-form-address" id="address"></textarea>
+                            </div>
+                            <div class=" block1">
+                                <label>Phone no. :</label>
+                                <input type="tel" name="pnum" placeholder="Phone number">
+                            </div>
+                            <div class="block2">
+                                <label>Gender:</label>
+                                <label><input type="radio" name="gender">Male</label>
+                                <label><input type="radio" name="gender">Female</label>
+                            </div>
+                            <button type="submit" class="btn btn-success text-center mx-auto">Save</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="side-nav-settings">
+                    <a href="javascript:void(0)" class=" nav-link closebtn" onclick="closeSettings()">&times;</a>
+                    <a class="nav-link" href="javascript:void(0)" onclick="openSettingsAccount()">Your Account</a>
+                    <div class="side-nav-settings-language">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle dropdown-btn" href="#" data-toggle="dropdown">Language</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item dropdown-link" href="#">English</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item dropdown-link" href="#">Hindi</a>
+                        </div>
+                    </div>
+                    </div>
+                    <a class="nav-link" href="#">Privacy</a>
+                    <a class="nav-link" href="#">Customer service</a>
+                </div>
+                <div class="side-nav-settings-account">
+                    <a href="javascript:void(0)" class=" nav-link closebtn" onclick="closeSettingsAccount()">&times;</a>
+                    <a class="nav-link" href="#">Login and security </a>
+                    <a class="nav-link" href="#">Nationality</a>
+                    <a class="nav-link" href="#">Reset Profile</a>
+                    <a class="nav-link" href="#">Delete Account</a>
+                </div>
+                <span class="side-nav-btn" onclick="openNav()">&#9776;</span>
+                <a class="navbar-brand" href="#">Rapid Basket</a>     
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">   
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <svg class="bi bi-cart3 nav-cart-icon" width="1.8em" height="1.8em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link clickable" href="cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <svg class="bi bi-box-arrow-left logout-icon" width="1.8em" height="1.8em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.354 11.354a.5.5 0 0 0 0-.708L1.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/>
+                            <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H2a.5.5 0 0 0 0 1h9a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M14 13.5a1.5 1.5 0 0 0 1.5-1.5V4A1.5 1.5 0 0 0 14 2.5H7A1.5 1.5 0 0 0 5.5 4v1.5a.5.5 0 0 0 1 0V4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 0-1 0V12A1.5 1.5 0 0 0 7 13.5h7z"/>
+                            </svg>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link clickable" href="index.html">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron hero-box container-fluid">
+            <div class="container text-left">
+                <h1 class="hero-heading text-left">Rapid basket</h1>
+                <p class="hero-text-1">It<span id="apos">'</span>s food o<span id="apos">&#39;</span>clock</p>
+                <div class="search-bar text-left align-top container">
+                    <input class="search container" type="search" placeholder="Search over latest trends..... " name="gsearch">
+                    <button class="search-btn container" onclick="#" >Search</button>
+                </div><br/>
+                <p class="hero-text-2 text-left">Get your favorite delicious servings on one click.</p>
+            </div>
+        </div>    
+    </header>
+    </section>
+    <section class="dropdown-bar">
+        <div class="container">
+            <p class="sort-text">Sort by:</p>
+            <div class="dropdown btn-1">
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-btn" data-toggle="dropdown">
+                cuisines
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-link" href="#">Indian</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">American</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">Chinese</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">French</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">Greek</a>
+                </div>
+            </div>
+            <div class="dropdown btn-2">
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-btn" data-toggle="dropdown">
+                price
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-link" href="#">high to low</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">low to high</a>
+                </div>
+            </div>
+            <div class="dropdown dropright btn-3">
+                <button type="button" class="btn btn-primary dropdown-toggle last-btn" data-toggle="dropdown">
+                courses
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-link" href="#">Breakfasts</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">Desserts</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">Seasonings and sauce</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">Bevaragers</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-link" href="#">Curries</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="images">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid" src="images-rapidabasket/1.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/4.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/1.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid" src="images-rapidabasket/8.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid" src="images-rapidabasket/2.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/3.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/4.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/5.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid" src="images-rapidabasket/6.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/7.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/8.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="polaroid">
+                        <img class="img-responsive img-fluid"  src="images-rapidabasket/2.jpg">
+                        <div class="container-price container">
+                            <p class="name">5-Layer Chocolate Cake – coffee-bathed chocolate gateau, Belgian chocolate filling, fluffy whipped cream and raspberry icing.</p>
+                            <p class="offer">25% off</p>
+                            <p class="price  text-right">&#8377; 1199</p>
+                            <p class="dashed-price text-right">&#8377; 3094</p>
+                            <div class="container text-center">
+                                <button class="cart-btn container" type="button" onclick="#">
+                                    <svg class="bi bi-cart3 cart-icon " width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                </svg>
+                                    <p class="cart-btn-text text-center text-nowrap">Add to cart</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <footer class="page-footer font-small bg-dark">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 foot-txt">© 2020 Copyright:
+            <a href="https://rapidbasket.com/"> Rapidbasket.com</a>
+        </div>
+        <!-- Copyright -->
+
+        </footer>
+        </div>
+    </body>
+     <script src="script.js">
+    </script>
+</html>
+
