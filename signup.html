@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="signup-1.css" type="text/css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section class="head-part">
+        <header>
+            
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+            
+                <a class="navbar-brand" href="#">Rapid Basket</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">   
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron container-fluid">
+            <div class="container hero-box">
+                <h1 class="hero-text text-center">Sign Up</h1>
+                <form  class="container" action="/action_page.php">
+                    
+                    <div class="form-group text-left">
+                        <label  class="firstname-label" for="fname">Firstname:</label>
+                        <input type="text" name="fname" class="form-control fname" placeholder="Firstname" id="firstname" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <label  class="lastname-label" for="lname">Lastname:</label>
+                        <input type="text" name="lname" class="form-control" placeholder="Lastname" id="lastname" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <label  class="email-label" for="email">Email address:</label>
+                        <input type="email" name="e-mail" class="form-control" placeholder="Enter email" id="email" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <label class="pass-label" for="pwd">Password:</label>
+                        <input type="password" name="pwd" class="form-control" placeholder="Enter password" id="pwd" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <label  class="re-type-label" for="re-pwd">Re-type password:</label>
+                        <input type="password" name="re-pwd" class="form-control" placeholder="Re-type password" id="re-pwd" required>
+                    </div>
+                    <div class="form-group text-left form-check">
+                        <label  class="for-check-label" for="checkbox-label">
+                            <input class="form-check-input"type="checkbox" name="check-box"  checked>Remember me</label>
+                    </div>
+                    <div class="btns text-center clearfix">
+                        <button type="submit" class="btn btn-success submit-btn">Sign up</button>
+                        <button type="button" class="btn btn-danger submit-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </header>
+    </section>
+    <footer class="page-footer font-small  final-foot bg-dark ">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 foot-txt">© 2020 Copyright:
+            <a href="https://rapidbasket.com/"> Rapidbasket.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    </body>
+</html>
